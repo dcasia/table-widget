@@ -1,0 +1,289 @@
+.table-widget :is(.sr-only) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0
+}
+.table-widget :is(.static) {
+    position: static
+}
+.table-widget :is(.relative) {
+    position: relative
+}
+.table-widget :is(.ml-auto) {
+    margin-left: auto
+}
+.table-widget :is(.mt-2) {
+    margin-top: 0.5rem
+}
+.table-widget :is(.flex) {
+    display: flex
+}
+.table-widget :is(.table) {
+    display: table
+}
+.table-widget :is(.hidden) {
+    display: none
+}
+.table-widget :is(.h-14) {
+    height: 3.5rem
+}
+.table-widget :is(.h-9) {
+    height: 2.25rem
+}
+.table-widget :is(.h-full) {
+    height: 100%
+}
+.table-widget :is(.min-h-\[auto\]) {
+    min-height: auto
+}
+.table-widget :is(.w-14) {
+    width: 3.5rem
+}
+.table-widget :is(.w-full) {
+    width: 100%
+}
+.table-widget :is(.flex-1) {
+    flex: 1 1 0%
+}
+.table-widget :is(.cursor-pointer) {
+    cursor: pointer
+}
+.table-widget :is(.flex-col) {
+    flex-direction: column
+}
+.table-widget :is(.items-center) {
+    align-items: center
+}
+.table-widget :is(.justify-end) {
+    justify-content: flex-end
+}
+.table-widget :is(.justify-center) {
+    justify-content: center
+}
+.table-widget :is(.space-x-0 > :not([hidden]) ~ :not([hidden])) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)))
+}
+.table-widget :is(.divide-y > :not([hidden]) ~ :not([hidden])) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse))
+}
+.table-widget :is(.divide-x > :not([hidden]) ~ :not([hidden])) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)))
+}
+.table-widget :is(.divide-gray-100 > :not([hidden]) ~ :not([hidden])) {
+    border-color: rgba(var(--colors-gray-100))
+}
+.table-widget :is(.divide-gray-700 > :not([hidden]) ~ :not([hidden])) {
+    border-color: rgba(var(--colors-gray-700))
+}
+.table-widget :is(.overflow-hidden) {
+    overflow: hidden
+}
+.table-widget :is(.overflow-x-auto) {
+    overflow-x: auto
+}
+.table-widget :is(.whitespace-nowrap) {
+    white-space: nowrap
+}
+.table-widget :is(.rounded) {
+    border-radius: 0.25rem
+}
+.table-widget :is(.border-b) {
+    border-bottom-width: 1px
+}
+.table-widget :is(.border-r) {
+    border-right-width: 1px
+}
+.table-widget :is(.border-t) {
+    border-top-width: 1px
+}
+.table-widget :is(.border-gray-200) {
+    border-color: rgba(var(--colors-gray-200))
+}
+.table-widget :is(.border-gray-600) {
+    border-color: rgba(var(--colors-gray-600))
+}
+.table-widget :is(.border-gray-700) {
+    border-color: rgba(var(--colors-gray-700))
+}
+.table-widget :is(.bg-transparent) {
+    background-color: transparent
+}
+.table-widget :is(.bg-gray-50) {
+    background-color: rgba(var(--colors-gray-50))
+}
+.table-widget :is(.bg-gray-700) {
+    background-color: rgba(var(--colors-gray-700))
+}
+.table-widget :is(.\!bg-gray-700) {
+    background-color: rgba(var(--colors-gray-700)) !important
+}
+.table-widget :is(.\!bg-gray-500) {
+    background-color: rgba(var(--colors-gray-500)) !important
+}
+.table-widget :is(.bg-gray-500) {
+    background-color: rgba(var(--colors-gray-500))
+}
+.table-widget :is(.bg-primary-500) {
+    background-color: rgba(var(--colors-primary-500))
+}
+.table-widget :is(.bg-gray-600) {
+    background-color: rgba(var(--colors-gray-600))
+}
+.table-widget :is(.bg-gray-800) {
+    background-color: rgba(var(--colors-gray-800))
+}
+.table-widget :is(.bg-gray-900) {
+    background-color: rgba(var(--colors-gray-900))
+}
+.table-widget :is(.p-4) {
+    padding: 1rem
+}
+.table-widget :is(.p-2) {
+    padding: 0.5rem
+}
+.table-widget :is(.p-1) {
+    padding: 0.25rem
+}
+.table-widget :is(.p-0) {
+    padding: 0px
+}
+.table-widget :is(.p-0\.5) {
+    padding: 0.125rem
+}
+.table-widget :is(.py-4) {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+.table-widget :is(.px-2) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem
+}
+.table-widget :is(.px-6) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+.table-widget :is(.py-2) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+.table-widget :is(.py-3) {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem
+}
+.table-widget :is(.pl-5) {
+    padding-left: 1.25rem
+}
+.table-widget :is(.pr-2) {
+    padding-right: 0.5rem
+}
+.table-widget :is(.pr-5) {
+    padding-right: 1.25rem
+}
+.table-widget :is(.pt-3) {
+    padding-top: 0.75rem
+}
+.table-widget :is(.text-right) {
+    text-align: right
+}
+.table-widget :is(.align-middle) {
+    vertical-align: middle
+}
+.table-widget :is(.text-2xl) {
+    font-size: 1.5rem;
+    line-height: 2rem
+}
+.table-widget :is(.text-xl) {
+    font-size: 1.25rem;
+    line-height: 1.75rem
+}
+.table-widget :is(.text-xxs) {
+    font-size: 11px
+}
+.table-widget :is(.text-base) {
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+.table-widget :is(.font-bold) {
+    font-weight: 700
+}
+.table-widget :is(.uppercase) {
+    text-transform: uppercase
+}
+.table-widget :is(.leading-normal) {
+    line-height: 1.5
+}
+.table-widget :is(.tracking-wide) {
+    letter-spacing: 0.025em
+}
+.table-widget :is(.text-gray-400) {
+    color: rgba(var(--colors-gray-400))
+}
+.table-widget :is(.text-gray-500) {
+    color: rgba(var(--colors-gray-500))
+}
+.table-widget :is(.filter) {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.table-widget :is(.hover\:text-primary-500:hover) {
+    color: rgba(var(--colors-primary-500))
+}
+.table-widget :is(.disabled\:pointer-events-none:disabled) {
+    pointer-events: none
+}
+.table-widget :is(.disabled\:opacity-50:disabled) {
+    opacity: 0.5
+}
+.table-widget :is(.group:hover .group-hover\:bg-gray-50) {
+    background-color: rgba(var(--colors-gray-50))
+}
+.table-widget :is(:is(.dark .dark\:divide-gray-700) > :not([hidden]) ~ :not([hidden])) {
+    border-color: rgba(var(--colors-gray-700))
+}
+.table-widget :is(.dark .dark\:border-gray-600) {
+    border-color: rgba(var(--colors-gray-600))
+}
+.table-widget :is(.dark .dark\:border-gray-700) {
+    border-color: rgba(var(--colors-gray-700))
+}
+.table-widget :is(.dark .dark\:bg-gray-800) {
+    background-color: rgba(var(--colors-gray-800))
+}
+.table-widget :is(.dark .group:hover .dark\:group-hover\:bg-gray-900) {
+    background-color: rgba(var(--colors-gray-900))
+}
+@media (min-width: 768px) {
+    .table-widget :is(.md\:ml-3) {
+        margin-left: 0.75rem
+    }
+    .table-widget :is(.md\:mt-0) {
+        margin-top: 0px
+    }
+    .table-widget :is(.md\:flex) {
+        display: flex
+    }
+    .table-widget :is(.md\:hidden) {
+        display: none
+    }
+    .table-widget :is(.md\:flex-row) {
+        flex-direction: row
+    }
+    .table-widget :is(.md\:items-center) {
+        align-items: center
+    }
+    .table-widget :is(.md\:pr-3) {
+        padding-right: 0.75rem
+    }
+}
+
