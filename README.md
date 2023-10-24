@@ -6,7 +6,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dcasia/table-widget/main/screenshots/dark.png">
-  <img alt="Nova Welcome Card in Action" src="https://raw.githubusercontent.com/dcasia/table-widget/main/screenshots/light.png">
+  <img alt="Nova Table Widget" src="https://raw.githubusercontent.com/dcasia/table-widget/main/screenshots/light.png">
 </picture>
 
 A table widget for laravel [Nova Dashboard](https://github.com/dcasia/nova-dashboard).
