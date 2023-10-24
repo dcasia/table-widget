@@ -1,6 +1,6 @@
 <template>
 
-    <div class="overflow-x-auto h-full bg-white dark:bg-gray-800 rounded h-[calc(100%-36px)]">
+    <div class="overflow-x-auto bg-white dark:bg-gray-800 rounded h-[calc(100%-36px)]">
 
         <table
             v-if="resources.length > 0"
