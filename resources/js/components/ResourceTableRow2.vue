@@ -5,22 +5,19 @@
         <td v-for="(field, index) in resource.fields"
             :key="field.uniqueKey"
             :class="{
-                'px-6': index === 0 && !shouldShowCheckboxes,
-                'px-2': index !== 0 || shouldShowCheckboxes,
-                'py-2': !shouldShowTight,
-                'whitespace-nowrap': !field.wrapping,
-                'cursor-pointer': clickableRow,
+                'px-6': index === 0 && !false,
+                'px-2': index !== 0 || false,
+                'py-2': !false,
+                'whitespace-nowrap': !false,
+                'cursor-pointer': false,
             }"
             class="dark:bg-gray-800 group-hover:bg-gray-50 dark:group-hover:bg-gray-900">
 
             <component
-                :is="'index-' + field.component"
-                :class="`text-${field.textAlign}`"
+                :is="`index-${ field.component }`"
+                :class="`text-${ field.textAlign }`"
                 :field="field"
-                :resource="resource"
-                :resource-name="resourceName"
-                :via-resource="viaResource"
-                :via-resource-id="viaResourceId"/>
+                :resource="resource"/>
 
         </td>
 
@@ -32,7 +29,7 @@
 
     export default {
         props: [
-            'resource',
+            'resource', 'shouldShowColumnBorders'
         ],
     }
 

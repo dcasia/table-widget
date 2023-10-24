@@ -1,10 +1,18 @@
 <template>
 
-    <Card class="table-widget min-h-[auto] overflow-hidden p-1">
+    <Card class="table-widget min-h-[auto] overflow-hidden p-1 flex items-center">
 
-        <LoadingView :loading="isLoading" class="w-full h-full overflow-hidden rounded">
-            <div class="p-2 text-base font-bold">Traffic Sources</div>
-            <ResourceTable :fields="card.fields" :resources="resources"/>
+        <LoadingView :loading="isLoading" :class="{ 'h-full': !isLoading }" class="w-full overflow-hidden rounded">
+
+            <div class="p-2 text-sm font-bold" v-if="card.title">
+                {{ card.title }}
+            </div>
+
+            <ResourceTable
+                :shouldShowColumnBorders="false"
+                :fields="resources[ 0 ].fields ?? []"
+                :resources="resources"/>
+
         </LoadingView>
 
     </Card>
@@ -20,13 +28,7 @@
         props: { card: Object },
         computed: {
             resources() {
-                return this.card.value.map(attributes => {
-                    return {
-                        fields: this.card.fields.map(field => ({
-                            ...field, value: attributes[ field.attribute ],
-                        })),
-                    }
-                })
+                return this.value.map(fields => ({ fields }))
             },
         },
     }
@@ -36,7 +38,7 @@
 <style lang="scss">
 
     .table-widget {
-        @apply bg-gray-700 #{!important};
+        @apply bg-gray-200 dark:bg-gray-700 #{!important};
     }
 
 </style>

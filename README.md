@@ -1,22 +1,22 @@
-# Nova Value Widget
+# Nova Table Widget
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/digital-creative/value-widget)](https://packagist.org/packages/digital-creative/value-widget)
-[![Total Downloads](https://img.shields.io/packagist/dt/digital-creative/value-widget)](https://packagist.org/packages/digital-creative/value-widget)
-[![License](https://img.shields.io/packagist/l/digital-creative/value-widget)](https://github.com/dcasia/value-widget/blob/main/LICENSE)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/digital-creative/table-widget)](https://packagist.org/packages/digital-creative/table-widget)
+[![Total Downloads](https://img.shields.io/packagist/dt/digital-creative/table-widget)](https://packagist.org/packages/digital-creative/table-widget)
+[![License](https://img.shields.io/packagist/l/digital-creative/table-widget)](https://github.com/dcasia/table-widget/blob/main/LICENSE)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dcasia/value-widget/main/screenshots/dark.png">
-  <img alt="Nova Welcome Card in Action" src="https://raw.githubusercontent.com/dcasia/value-widget/main/screenshots/light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dcasia/table-widget/main/screenshots/dark.png">
+  <img alt="Nova Welcome Card in Action" src="https://raw.githubusercontent.com/dcasia/table-widget/main/screenshots/light.png">
 </picture>
 
-A simple widget for laravel [nova-dashboard](https://github.com/dcasia/nova-dashboard).
+A table widget for laravel [Nova Dashboard](https://github.com/dcasia/nova-dashboard).
 
 # Installation
 
 You can install the package via composer:
 
 ```
-composer require digital-creative/value-widget
+composer require digital-creative/table-widget
 ```
 
 ## Basic Usage
@@ -24,21 +24,29 @@ composer require digital-creative/value-widget
 ```php
 use DigitalCreative\NovaDashboard\Filters;
 use DigitalCreative\TableWidget\TableWidget;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
-class MyWidget extends TableWidget
+class UsersWidget extends TableWidget
 {
-    public function configure(NovaRequest $request): void
+    public function fields(): array
     {
-        $this->icon('<svg></svg> or heroicons name');
-        $this->title('My Widget');
-        $this->textColor(dark: '#845adf', light: '#845adf');
-        $this->backgroundColor('#845adf4f');
+        return [
+            Text::make('Name'),
+            Number::make('Likes'),
+            Number::make('Followers'),
+        ];
     }
 
-    public function value(Filters $filters): mixed
+    public function value(Filters $filters): Collection
     {
-      //
+        return Collection::range(0, 10)->map(function (int $index) {
+
+            return [
+                'name' => fake()->name(),
+                'likes' => fake()->numberBetween(0, 1000),
+                'followers' => fake()->numberBetween(100, 100000),
+            ];
+
+        });
     }
 }
 ```
@@ -66,4 +74,4 @@ Please give a ⭐️ if this project helped you!
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://raw.githubusercontent.com/dcasia/value-widget/main/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://raw.githubusercontent.com/dcasia/table-widget/main/LICENSE) for more information.
